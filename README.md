@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/chestm007/amdgpu-fan.svg?style=svg)](https://circleci.com/gh/chestm007/amdgpu-fan)  
+[![CircleCI](https://circleci.com/gh/chestm007/amdgpu-fan.svg?style=svg)](https://circleci.com/gh/chestm007/amdgpu-fan)
 
 # Fan controller for amdgpus [python3 only]
 
@@ -11,8 +11,8 @@ If you experience problems please create an issue.
 ### Arch linux
 Available in the aur as `amdgpu-fan`
 
-## usage:  
-`sudo amdgpu-fan`  
+## usage:
+`sudo amdgpu-fan`
 
 ## configuration:
 ```
@@ -26,9 +26,10 @@ speed_matrix:  # -[temp(*C), speed(0-100%)]
 - [80, 100]
 
 # optional
-# cards:  # can be any card returned from 
+# cards:  # can be any card returned from
 #         # ls /sys/class/drm | grep "^card[[:digit:]]$"
 # - card0
+
+# optional
+# temp_drop: 5  # how much temperature should drop before fan speed is decreased
 ```
-
-
