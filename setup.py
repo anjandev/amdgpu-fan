@@ -14,8 +14,8 @@ setup(
     license='GPL-2.0',
     author='Max Chesterfield',
     author_email='chestm007@hotmail.com',
-    maintainer='Max Chesterfield',
-    maintainer_email='chestm007@hotmail.com',
+    maintainer='Filippo Roggi',
+    maintainer_email='zzkw35@gmail.com',
     description='amdgpu fan controller',
     long_description=readme,
     install_requires=[
