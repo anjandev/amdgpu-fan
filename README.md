@@ -1,20 +1,25 @@
-[![CircleCI](https://circleci.com/gh/chestm007/amdgpu-fan.svg?style=svg)](https://circleci.com/gh/chestm007/amdgpu-fan)
-
-# Fan controller for amdgpus [python3 only]
+# Fan controller for amdgpus
 
 If you experience problems please create an issue.
 
-## installation:
-### pip
-`sudo pip3 install amdgpu-fan`
+## Installation:
 
-### Arch linux
-Available in the aur as `amdgpu-fan`
+### Arch Linux, Manjaro and derivatives
+```
+$ git clone https://github.com/zzkW35/amdgpu-fan.git
+$ cd amdgpu-fan
+$ makepkg -si
+```
 
-## usage:
-`sudo amdgpu-fan`
+## Usage:
+`$ sudo amdgpu-fan`  
+Start the daemon with `$ sudo systemctl start amdgpu-fan`  
+Make it with run at startup with `$ sudo systemctl enable amdgpu-fan`
 
-## configuration:
+
+## Configuration:
+Edit `/etc/amdgpu-fan.yml` to create the desired fan curve
+
 ```
 # /etc/amdgpu-fan.yml
 # eg:
