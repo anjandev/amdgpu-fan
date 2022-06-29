@@ -1,0 +1,7 @@
+#!/sbin/openrc-run
+
+name="Fan controller for amdgpus"
+command="/usr/bin/amdgpu-fan"
+pidfile="/var/run/amdgpu-fan.pid"
+command_background=true
+
