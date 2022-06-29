@@ -13,6 +13,16 @@ $ git clone https://github.com/zzkW35/amdgpu-fan.git
 $ cd amdgpu-fan
 $ makepkg -si
 ```
+### Alpine Linux and derivatives
+Install from the
+[repositories](://pkgs.alpinelinux.org/packages?name=amdgpu-fan&branch=edge) or
+build from source via aports:
+
+```
+$ git clone https://gitlab.alpinelinux.org/alpine/aports.git
+$ cd aports/*/amdgpu-fan
+$ abuild -r
+```
 
 ## Usage:
 `$ sudo amdgpu-fan`  
